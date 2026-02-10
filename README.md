@@ -1,23 +1,18 @@
+**Profile with background:** [View on GitHub Pages →](https://cauediademi.github.io/cauediademi/)
+
 <div align="center">
-<h3>Hello, World!</h3>
-<br /> <!-- There is no problem with a quick fix -->
+  <img src="hello-world.jpeg" alt="Hello, World!" width="100%" style="max-width: 896px; display: block;" />
 </div>
-
-
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random quote" width="600" />
 </div>
-
-<div align="center">
+<div align="center" style="margin-top:12px;">
   <img src="https://readme-typing-svg.demolab.com/?lines=Techlead+%40+Accelerare;Java+%7C+React+%7C+SQL+%7C+Cursor&font=Fira+Code&size=16&center=true&duration=1&pause=2000&color=2FD6F7&width=400" alt="Typing animation" />
 </div>
-
-
-<div align="center">
+<div align="center" style="margin-top:12px;">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=cauediademi&theme=github-dark&hide_border=true" width="500" alt="Streak" />
 </div>
-
-<div align="center">
+<div align="center" style="margin-top:12px;">
   <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
 </div>
 
@@ -35,7 +30,6 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
-
-
-
+---
+<sub>**GitHub Pages (background layout):** Repo → Settings → Pages → Source: **Deploy from a branch** → Branch: master (or main) → Folder: **/docs** → Save. Site: https://cauediademi.github.io/cauediademi/</sub>
 
