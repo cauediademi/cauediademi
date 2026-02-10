@@ -29,8 +29,8 @@ I'm Cauê Diademi 👋
 ### 📊 GitHub stats (github-readme-stats)
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/master/assets/stats.svg" width="400" alt="GitHub stats" />
-  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/master/assets/top-langs.svg" width="400" alt="Top languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=cauediademi&show_icons=true&theme=github_dark&hide_border=true" width="400" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cauediademi&layout=compact&theme=github_dark&hide_border=true" width="400" alt="Top languages" />
 </div>
 
 ---

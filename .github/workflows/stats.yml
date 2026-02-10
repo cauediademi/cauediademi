@@ -18,39 +18,53 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: checkout (master - must match README raw URLs)
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: master
 
       - name: fetch and sanitize stats.svg
         run: |
           mkdir -p assets
           UA="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
-          curl -sL -A "$UA" "https://github-readme-stats.vercel.app/api?username=${{ github.repository_owner }}&show_icons=true&theme=github_dark&hide_border=true" -o /tmp/stats.svg
+          curl -sL -A "$UA" --max-time 30 "https://github-readme-stats.vercel.app/api?username=${{ github.repository_owner }}&show_icons=true&theme=github_dark&hide_border=true" -o /tmp/stats.svg
+          echo "API response length: $(wc -c < /tmp/stats.svg). First 120 chars: $(head -c 120 /tmp/stats.svg | cat -v)"
           python3 -c "
           d = open('/tmp/stats.svg', 'rb').read()
           c = bytes(b for b in d if b >= 32 or b in (9, 10, 13))
           open('/tmp/stats_clean.svg', 'wb').write(c)
           "
-          grep -q '<svg' /tmp/stats_clean.svg && mv /tmp/stats_clean.svg assets/stats.svg || echo "Stats API did not return SVG, keeping existing assets/stats.svg"
+          if grep -q '<svg' /tmp/stats_clean.svg; then
+            mv /tmp/stats_clean.svg assets/stats.svg
+            echo "Stats SVG updated successfully"
+          else
+            echo "Stats API did not return SVG (got HTML or error), keeping existing file"
+          fi
 
       - name: fetch and sanitize top-langs.svg
         run: |
           UA="Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0"
-          curl -sL -A "$UA" "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=github_dark&hide_border=true" -o /tmp/top-langs.svg
+          curl -sL -A "$UA" --max-time 30 "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=github_dark&hide_border=true" -o /tmp/top-langs.svg
+          echo "API response length: $(wc -c < /tmp/top-langs.svg)"
           python3 -c "
           d = open('/tmp/top-langs.svg', 'rb').read()
           c = bytes(b for b in d if b >= 32 or b in (9, 10, 13))
           open('/tmp/top-langs_clean.svg', 'wb').write(c)
           "
-          grep -q '<svg' /tmp/top-langs_clean.svg && mv /tmp/top-langs_clean.svg assets/top-langs.svg || echo "Top-langs API did not return SVG, keeping existing"
+          if grep -q '<svg' /tmp/top-langs_clean.svg; then
+            mv /tmp/top-langs_clean.svg assets/top-langs.svg
+            echo "Top-langs SVG updated successfully"
+          else
+            echo "Top-langs API did not return SVG, keeping existing file"
+          fi
 
-      - name: commit and push
+      - name: commit and push to master
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/
-          git diff --staged --quiet || (git commit -m "chore: update stats and top-langs SVGs" && git push)
+          git status
+          git diff --staged --quiet && echo "No changes to commit" || (git commit -m "chore: update stats and top-langs SVGs" && git push origin master)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
