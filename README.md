@@ -23,9 +23,9 @@
 
 ### 📊 GitHub stats (github-readme-stats)
 
-<img src="https://github-readme-stats.vercel.app/api?username=cauediademi&show_icons=true&theme=github_dark&hide_border=true" width="400" />
+<img src="https://raw.githubusercontent.com/cauediademi/cauediademi/master/assets/stats.svg" width="400" alt="GitHub stats" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cauediademi&layout=compact&theme=github_dark&hide_border=true" width="400" />
+<img src="https://raw.githubusercontent.com/cauediademi/cauediademi/master/assets/top-langs.svg" width="400" alt="Top languages" />
 
 ---
 
@@ -54,4 +54,4 @@
 
 ### 🐍 Contribution snake ([Platane/snk](https://github.com/Platane/snk))
 
-![Snake](https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake.svg)
+![Snake](https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg)
