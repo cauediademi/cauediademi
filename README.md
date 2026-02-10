@@ -52,8 +52,6 @@
 
 ---
 
-### 🐍 Contribution snake (needs GitHub Action)
+### 🐍 Contribution snake ([Platane/snk](https://github.com/Platane/snk))
 
-Add the workflow from [Platane/snk](https://github.com/Platane/snk) to this repo, then uncomment below:
-
-`![Snake](https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake.svg)`
+![Snake](https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake.svg)
