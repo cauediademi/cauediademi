@@ -1,14 +1,25 @@
-### Hello, World!
+<div align="center">
+<h3>Hello, World!</h3>
+<br /> <!-- There is no problem with a quick fix -->
+</div>
 
-I'm Cauê Diademi 👋
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random quote" width="600" />
+</div>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Techlead+%40+Accelerare;Java+%7C+React+%7C+SQL+%7C+Cursor&font=Fira+Code&size=16&center=true&duration=1&pause=2000&color=2FD6F7&width=400" alt="Typing animation" />
 </div>
 
----
 
-### 🛠 Tech & tools
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cauediademi&theme=github-dark&hide_border=true" width="500" alt="Streak" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
+</div>
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
@@ -24,35 +35,7 @@ I'm Cauê Diademi 👋
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
----
 
-### 📊 GitHub stats (github-readme-stats)
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cauediademi&show_icons=true&theme=github_dark&hide_border=true" width="400" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cauediademi&layout=compact&theme=github_dark&hide_border=true" width="400" alt="Top languages" />
-</div>
 
----
 
-### 🔥 Contribution streak (github-readme-streak-stats)
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cauediademi&theme=github-dark&hide_border=true" width="500" alt="Streak" />
-</div>
-
----
-
-### 💬 Random dev quote (refreshes on load)
-
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random quote" width="600" />
-</div>
-
----
-
-### 🐍 Contribution snake ([Platane/snk](https://github.com/Platane/snk))
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
-</div>
