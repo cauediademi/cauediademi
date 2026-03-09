@@ -18,7 +18,7 @@
 
 <div align="center">
   <a href="https://thegitcity.com/dev/cauediademi">
-    <img src="./assets/gitcity.png" alt="Git City" width="600" />
+    <img src="https://thegitcity.com/api/share-card/cauediademi" alt="Git City" width="600" />
   </a>
 </div>
 
