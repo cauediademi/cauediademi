@@ -12,13 +12,18 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Techlead+%40+Accelerare;Java+%7C+React+%7C+SQL+%7C+Cursor&font=Fira+Code&size=16&center=true&duration=1&pause=2000&color=2FD6F7&width=400" alt="Typing animation" />
 </div>
 
+<!-- <div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cauediademi&theme=github-dark&hide_border=true" width="500" alt="Streak" />
+</div> -->
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cauediademi&theme=github-dark&hide_border=true" width="500" alt="Streak" />
+  <a href="https://thegitcity.com/dev/cauediademi">
+    <img src="./assets/gitcity.png" alt="Git City" width="600" />
+  </a>
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
+  <img src="https://raw.githubusercontent.com/cauediademi/cauediademi/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" href="https://www.thegitcity.com/dev/cauediademi" />
 </div>
 
 <p align="center">
