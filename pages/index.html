@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Caue Diademi, showcasing skills in React, React Native, TypeScript, Node.js, Python, PostgreSQL, Docker, Git, AWS, FastAPI, REST APIs, GraphQL, Redis, and CI/CD">
+    <meta name="keywords" content="React, React Native, TypeScript, Node.js, Python, PostgreSQL, Docker, Git, AWS, FastAPI, REST APIs, GraphQL, Redis, CI/CD">
+    <meta name="author" content="Caue Diademi">
+    <title>Caue Diademi - Personal Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #f1c40f;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .hero {
+            background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 48px;
+            animation: hero-animation 2s infinite;
+        }
+        @keyframes hero-animation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .badge:hover {
+            background-color: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                height: 30vh;
+            }
+            .card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Caue Diademi - Personal Portfolio</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Skills</h2>
+            <div>
+                <span class="badge">React</span>
+                <span class="badge">React Native</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">Python</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Git</span>
+                <span class="badge">AWS</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">REST APIs</span>
+                <span class="badge">GraphQL</span>
+                <span class="badge">Redis</span>
+                <span class="badge">CI/CD</span>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div>
+                <div class="card">
+                    <h2>Project 1</h2>
+                    <p>This is a description of project 1.</p>
+                </div>
+                <div class="card">
+                    <h2>Project 2</h2>
+                    <p>This is a description of project 2.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:caue.diademi@doctorid.com.br">caue.diademi@doctorid.com.br</a></p>
+            <p>GitHub: <a href="https://github.com/cauediademi">https://github.com/cauediademi</a></p>
+        </section>
+    </main>
+    <script>
+        // Inline JavaScript code
+        console.log("Page loaded");
+    </script>
+</body>
+</html>
