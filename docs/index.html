@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cauediademi - Hello, World.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        h2 {
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            font-weight: 300;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .bio {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            font-size: 1rem;
+            font-family: inherit;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #7C3AED;
+            border: 2px solid #7C3AED;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: #6d28d9;
+            border-color: #6d28d9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border-color: #7C3AED;
+            color: #7C3AED;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(124, 58, 237, 0.1);
+            color: #ffffff;
+        }
+
+        footer {
+            padding: 2rem 1rem;
+            text-align: center;
+            color: #666666;
+            font-size: 0.875rem;
+            animation: fadeInUp 1s ease-out 1.2s both;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 1.5rem 1rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                margin-bottom: 1.5rem;
+            }
+
+            .bio {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hello, World.</h1>
+            <h2>I'm @cauediademi — welcome to my corner of the internet.</h2>
+            <p class="bio">
+                I'm a developer passionate about creating meaningful digital experiences. 
+                This is my space to share projects, ideas, and connect with the community. 
+                Feel free to explore my work and reach out if you'd like to collaborate or just say hello.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/cauediademi" class="btn" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                <a href="mailto:caue.diademi@doctorid.com.br" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> cauediademi</p>
+    </footer>
+
+    <script>
+        // Update year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
